@@ -43,7 +43,7 @@ for sid in "${LETTER_WORKSPACES[@]}"; do
       icon="$sid" \
       icon.padding_left=8 \
       icon.padding_right=4 \
-      label.font="FiraCode Nerd Font:Bold:25.0" \
+      label.font="FiraCode Nerd Font:Bold:23.0" \
       label.padding_right=8 \
       label.y_offset=1 \
       background.height=29 \
@@ -59,7 +59,7 @@ for sid in $(seq 0 9); do
       icon="$sid" \
       icon.padding_left=8 \
       icon.padding_right=4 \
-      label.font="FiraCode Nerd Font:Bold:25.0" \
+      label.font="FiraCode Nerd Font:Bold:23.0" \
       label.padding_right=8 \
       label.y_offset=1 \
       background.height=29 \
