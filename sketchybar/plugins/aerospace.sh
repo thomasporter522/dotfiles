@@ -66,9 +66,20 @@ update_space() {
     icon_text=""
   fi
 
+  # When showing app icons (no letter), collapse icon padding to remove left gap
+  if [ -z "$icon_text" ]; then
+    icon_pl=0
+    icon_pr=0
+  else
+    icon_pl=8
+    icon_pr=4
+  fi
+
   if [ "$sid" = "$current" ]; then
     sketchybar --set space.$sid \
       icon="$icon_text" \
+      icon.padding_left=$icon_pl \
+      icon.padding_right=$icon_pr \
       label="$label" \
       background.drawing=on \
       background.color=0xffffffff \
@@ -77,6 +88,8 @@ update_space() {
   else
     sketchybar --set space.$sid \
       icon="$icon_text" \
+      icon.padding_left=$icon_pl \
+      icon.padding_right=$icon_pr \
       label="$label" \
       background.drawing=off \
       icon.color=0xffffffff \

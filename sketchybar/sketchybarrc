@@ -6,14 +6,14 @@
 PLUGIN_DIR="$CONFIG_DIR/plugins"
 
 ##### Bar Appearance #####
-sketchybar --bar position=top height=40 blur_radius=30 color=0x40000000
+sketchybar --bar position=top height=48 blur_radius=30 color=0x40000000
 
 ##### Changing Defaults #####
 default=(
   padding_left=5
   padding_right=5
-  icon.font="FiraCode Nerd Font:Bold:17.0"
-  label.font="FiraCode Nerd Font:Bold:14.0"
+  icon.font="FiraCode Nerd Font:Bold:20.0"
+  label.font="FiraCode Nerd Font:Bold:17.0"
   icon.color=0xffffffff
   label.color=0xffffffff
   icon.padding_left=4
@@ -43,10 +43,10 @@ for sid in "${LETTER_WORKSPACES[@]}"; do
       icon="$sid" \
       icon.padding_left=8 \
       icon.padding_right=4 \
-      label.font="FiraCode Nerd Font:Bold:21.0" \
+      label.font="FiraCode Nerd Font:Bold:25.0" \
       label.padding_right=8 \
       label.y_offset=1 \
-      background.height=24 \
+      background.height=29 \
       background.corner_radius=6 \
       background.drawing=off \
       click_script="aerospace workspace $sid"
@@ -59,10 +59,10 @@ for sid in $(seq 0 9); do
       icon="$sid" \
       icon.padding_left=8 \
       icon.padding_right=4 \
-      label.font="FiraCode Nerd Font:Bold:21.0" \
+      label.font="FiraCode Nerd Font:Bold:25.0" \
       label.padding_right=8 \
       label.y_offset=1 \
-      background.height=24 \
+      background.height=29 \
       background.corner_radius=6 \
       background.drawing=off \
       drawing=off \

@@ -27,9 +27,6 @@ alt-7 = "workspace 7"
 alt-8 = "workspace 8"
 alt-9 = "workspace 9"
 
-# Toggle bar gap (laptop vs external monitor)
-alt-g = "exec-and-forget $HOME/.config/aerospace/gaps.sh"
-
 alt-tab = "workspace next --wrap-around"
 alt-shift-tab = "workspace prev --wrap-around"
 
@@ -73,4 +70,4 @@ if.app-id = 'com.apple.finder'
 run = 'move-node-to-workspace F'
 
 [gaps]
-outer.top = 40
+outer.top = 10
